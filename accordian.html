@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>ACCORDIAN component</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family:sans-serif;
+            color:#343a40;
+            line-height:1;
+        }
+        .accordian  {
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .item{
+            width:700px;
+            margin:12px auto;
+            box-shadow: 0 0 32px rgba(0,0,0,0.1);
+            padding:28px;
+            display:grid;
+            grid-template-columns: auto 1fr auto;
+            row-gap: 18px;
+            column-gap: 18px;
+        
+        }
+
+        .text , .number{
+            font-weight: 700;
+            font-size:24px;
+            
+ 
+        }
+        .open{
+            border-top: 4px solid #087f5b;
+        }
+        .number{
+            color: #ced4da;
+        }
+        .open .number, .open .text{
+            color: #087f5b;
+        }
+        .icon{
+            width:24px;
+            height:24px;
+            stroke: #087f5b;
+        }
+        .open .hidden-box{
+            display: block;
+
+        }
+        .hidden-box{
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            line-height: 1.5;
+            display: none;
+        }
+        ul{
+            margin-top: 12px;
+            margin-left:18px;
+            color: #8f9295;
+        }
+
+        </style>
+        </head>
+        <body>
+              
+            <div class="accordian">
+                <div class="item">
+                    <p class="number">01</p>
+                    <p class="text">where are these chairs assembeld?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                      <!-- <div class="hidden-box">
+                       <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere laudantium rem eveniet suscipit distinctio aperiam illo, itaque explicabo quibusdam consequatur reprehenderit assumenda eaque? Omnis blanditiis veniam reiciendis deserunt numquam voluptas.</p>
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing eli</li>
+                            <li> Facere laudantium rem eveniet suscipit distinctio aperiam ill</li>
+                            <li> suscipit distinctio aperiam illo, itaque explicabo quibusdam </li>
+                        </ul>
+                      </div> -->
+
+
+                </div>
+                <div class="item open">
+                    <p class="number">02</p>
+                    <p class="text">how long do i have to return my chair?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                      <div class="hidden-box">
+                       <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere laudantium rem eveniet suscipit distinctio aperiam illo, itaque explicabo quibusdam consequatur reprehenderit assumenda eaque? Omnis blanditiis veniam reiciendis deserunt numquam voluptas.</p>
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing eli</li>
+                            <li> Facere laudantium rem eveniet suscipit distinctio aperiam ill</li>
+                            <li> suscipit distinctio aperiam illo, itaque explicabo quibusdam </li>
+                        </ul>
+                      </div>
+
+
+                </div>
+                <div class="item">
+                    <p class="number">03</p>
+                    <p class="text">do you ship to the countries outside EU?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                      <!-- <div class="hidden-box">
+                       <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere laudantium rem eveniet suscipit distinctio aperiam illo, itaque explicabo quibusdam consequatur reprehenderit assumenda eaque? Omnis blanditiis veniam reiciendis deserunt numquam voluptas.</p>
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing eli</li>
+                            <li> Facere laudantium rem eveniet suscipit distinctio aperiam ill</li>
+                            <li> suscipit distinctio aperiam illo, itaque explicabo quibusdam </li>
+                        </ul>
+                      </div> -->
+
+
+                </div>
+            </div>
+        </body>
+        </html>
